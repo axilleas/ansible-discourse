@@ -1,1 +1,4 @@
 .vagrant/
+hosts
+ssl.key
+ssl.crt
