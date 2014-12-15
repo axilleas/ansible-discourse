@@ -2,3 +2,4 @@
 hosts
 ssl.key
 ssl.crt
+*.swp

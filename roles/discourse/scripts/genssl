@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+DIR=$( cd "$( dirname "$0" )" && pwd )
+
+openssl req \
+  -nodes \
+  -x509 \
+  -sha256 \
+  -newkey rsa:4096 \
+  -keyout "${DIR}/../files/ssl.key" \
+  -out "${DIR}/../files/ssl.crt" \
+  -days 365 \
+  -subj "/C=CC/ST=State/L=MyCity/O=Organisation/OU=OrgUnit/CN=staging.discourse.local"
+

@@ -1,0 +1,13 @@
+---
+# vars file for discourse
+
+## The domain name this Discourse instance will respond to
+discourse_hostname: 'staging.discourse.local'
+
+discourse_smtp_address: mail.gitlabforum.org
+
+## Uncomment both variables if you want to use ssl.
+## Remember to put your certs in /var/discourse/shared/standalone/ssl/.
+## https://meta.discourse.org/t/allowing-ssl-for-your-discourse-docker-setup
+ssl_enable: '  - "templates/web.ssl.template.yml"'
+ssl_expose: '  - "443:443" # fwd host port 443  to container port 443 (https)'
